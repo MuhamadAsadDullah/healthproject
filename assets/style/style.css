@@ -34,6 +34,10 @@
     font-family: var(--font-primary);
 }
 
+body {
+    overflow: hidden;
+}
+
 
 .font-subhead {
     font-size: 32px;
