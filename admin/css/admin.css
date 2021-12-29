@@ -7,8 +7,8 @@
     --bgcolor-primary-default: #F2F2F2;
     --bgcolor-secondary: #562349;
 
-    --bgcolor-neutral: #000000;
-    --bgcolor-neutral-default: #606060;
+    --bgcolor-neutral: #2B2B2B;
+    --bgcolor-neutral-default: #525252;
     --bgcolor-neutral-secondary: #FFFFFF;   
     
 
@@ -68,8 +68,65 @@
 }
 
 
+
+
+.sidebar {
+    background-color: var(--bgcolor-neutral) !important;
+}
+
+.sidebar .side-gap {
+    padding: 12px 0px;
+}
+
+.sidebar .nav-link {
+    margin: 4px 0px;
+    padding: 12px 16px !important;
+    border-radius: 50px;
+}
+
+.sidebar .nav-link:hover {
+    background-color: var(--bgcolor-neutral-default) !important;
+}
+
+
+
+
+
 .card-header {
     background-color: var(--bgcolor-neutral-secondary);
 }
 
+.btn-upload {
+    color: transparent;
+}
+.btn-upload::-webkit-file-upload-button {
+    visibility: hidden;
+}
 
+.btn-upload::before {
+    content: 'Add File';
+    width: 88%;
+    margin: 8px 0px;
+    padding: 5px 8px;
+
+    cursor: pointer;
+    white-space: nowrap;
+    display: inline-block;
+    /* -webkit-user-select: none; */
+
+    font-size: 14px;
+    text-align: center;
+
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid var(--bgcolor-neutral);
+
+    color: var(--fcolor-neutral);
+    background: transparent;
+}
+
+.btn-primary {
+    font-size: 14px;
+    background-color: var(--bgcolor-neutral);
+    border: none;
+}
