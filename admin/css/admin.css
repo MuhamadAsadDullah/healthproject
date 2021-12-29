@@ -1,0 +1,75 @@
+/* -------------------- ALL STYLE -------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins:wght@400;500;700&family=Quicksand:wght@400;500;700&display=swap');
+
+:root {
+    /* BACKGROUND-COLOR */
+    --bgcolor-primary: #DC9788;
+    --bgcolor-primary-default: #F2F2F2;
+    --bgcolor-secondary: #562349;
+
+    --bgcolor-neutral: #000000;
+    --bgcolor-neutral-default: #606060;
+    --bgcolor-neutral-secondary: #FFFFFF;   
+    
+
+
+    /* FONT-COLOR */
+    --fcolor-primary: #DC9788;
+    --fcolor-secondary: #562349;
+    
+    --fcolor-neutral: #000000;
+    --fcolor-neutral-default: #606060;
+    --fcolor-neutral-secondary: #FFFFFF;    
+    
+    
+    
+    /* FONT-FAMILY */
+    --font-primary: 'Poppins', 'Quicksand', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --font-secondary: 'Playfair Display', 'Times New Roman', Times, serif;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth !important;
+    font-family: var(--font-primary);
+}
+
+
+
+
+
+.font-subhead {
+    font-size: 32px;
+}
+
+.font-desc {
+    font-size: 12px;
+}
+
+.card-font-head {
+    margin: 0;
+
+    font-size: 16px;
+    color: var(--fcolor-neutral);
+}
+
+.card-font-subhead {
+    margin: 0;
+
+    font-size: 14px;
+    color: var(--fcolor-neutral);
+}
+
+.card-font-desc {
+    margin: 0;
+
+    font-size: 10px;
+    color: var(--fcolor-neutral);
+}
+
+
+.card-header {
+    background-color: var(--bgcolor-neutral-secondary);
+}
+
+
