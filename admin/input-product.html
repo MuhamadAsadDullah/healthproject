@@ -184,14 +184,49 @@
                                             <input type="text" class="form-control">
                                         </div>
 
-                                        <p class="card-font-subhead mb-2">Available in</p>
+                                        <!-- <p class="card-font-subhead mb-2">Tokopedia Link Product</p>
                                         <div class="input-group mb-3">
-                                            <select class="form-select" id="inputGroupSelect04">
-                                              <option selected>Tokopedia</option>
-                                              <option value="1">Lazada</option>
-                                              <option value="2">Shopee</option>
-                                              <option value="3">BukaLapak</option>
-                                            </select>
+                                            <input type="text" class="form-control" placeholder="https://">
+                                        </div>
+                                        <p class="card-font-subhead mb-2">Shopee Link Product</p>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="https://">
+                                        </div>
+                                        <p class="card-font-subhead mb-2">Lazada Link Product</p>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="https://">
+                                        </div>
+                                        <p class="card-font-subhead mb-2">Bukalapak Link Product</p>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="https://">
+                                        </div> -->
+
+                                        <div class="row">
+                                            <p class="card-font-subhead mb-2">Available Link</p>
+                                            <div class="col col-lg-3 col-sm-12">
+                                                <p class="card-font-subhead mb-2">Tokopedia</p>
+                                                <div class="input-group mb-3">
+                                                    <input type="text" class="form-control" placeholder="https://">
+                                                </div>
+                                            </div>
+                                            <div class="col col-lg-3 col-sm-12">
+                                                <p class="card-font-subhead mb-2">Shopee</p>
+                                                <div class="input-group mb-3">
+                                                    <input type="text" class="form-control" placeholder="https://">
+                                                </div>
+                                            </div>
+                                            <div class="col col-lg-3 col-sm-12">
+                                                <p class="card-font-subhead mb-2">Lazada</p>
+                                                <div class="input-group mb-3">
+                                                    <input type="text" class="form-control" placeholder="https://">
+                                                </div>
+                                            </div>
+                                            <div class="col col-lg-3 col-sm-12">
+                                                <p class="card-font-subhead mb-2">Bukalapak</p>
+                                                <div class="input-group mb-3">
+                                                    <input type="text" class="form-control" placeholder="https://">
+                                                </div>
+                                            </div>
                                         </div>
 
                                         <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
@@ -210,13 +245,49 @@
                                 </div>
                                 <!-- Card Body -->
                                 <div class="card-body">
-                                    <p class="card-font-subhead">Product Cover</p>
-                                    <input type="file" name="" id="" class="btn-upload">
-                                    <p class="card-font-desc mb-3">Note: This image will appear at the beginning of the product display</p>
+                                    <div class="priview-image">
+                                        <div class="product-cover-image">
+                                            <img id="product-cover-image" src="" alt="">    
+                                        </div>
+                                        <div class="priview-gallery-image">
+                                            <div class="product-gallery-image">
+                                                <img id="product-gallery-image1" src="" alt="">
+                                            </div>
+                                            <div class="product-gallery-image">
+                                                <img id="product-gallery-image2" src="" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product-cover">
+                                        <p class="card-font-subhead">Product Cover</p>
+                                        <!-- <input type="file" name="" id="" class="btn-upload"> -->
+                                        <input type="file"  type="file[]" multiple="multiple" name="" id="" class="btn-upload" onchange="AddImageCover(event)">
+
+                                        <script>
+                                            var AddImageCover = function(event) {
+                                                var ImageCover = document.getElementById('product-cover-image');
+                                                ImageCover.src = URL.createObjectURL(event.target.files[0]);
+                                            };
+                                        </script>
+                                        <p class="card-font-desc mb-3">Note: This image will appear at the beginning of the product display</p>
+                                    </div>
                                     
-                                    <p class="card-font-subhead">Product Gallery</p>
-                                    <input type="file" name="" id="" class="btn-upload">
-                                    <p class="card-font-desc">Note: max 2 images for gallery</p>
+                                    <div class="product-gallery">
+                                        <p class="card-font-subhead">Product Gallery</p>
+                                        <!-- <input type="file" name="" id="" class="btn-upload"> -->
+                                        <input type="file"  type="file[]" multiple="multiple" name="" id="" class="btn-upload" onchange="AddImageGallery(event)">
+
+                                        <script>
+                                            var AddImageGallery = function(event) {
+                                                var ImageGallery1 = document.getElementById('product-gallery-image1');
+                                                var ImageGallery2 = document.getElementById('product-gallery-image2');
+                                                ImageGallery1.src = URL.createObjectURL(event.target.files[0]);
+                                                ImageGallery2.src = URL.createObjectURL(event.target.files[1]);
+                                            };
+                                        </script>
+                                        <p class="card-font-desc">Note: max 2 images for gallery</p>
+                                    </div>
                                 </div>
                             </div>
 
