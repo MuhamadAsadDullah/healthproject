@@ -97,6 +97,7 @@
 }
 
 .btn-upload {
+    width: 100%;
     color: transparent;
 }
 .btn-upload::-webkit-file-upload-button {
@@ -105,7 +106,7 @@
 
 .btn-upload::before {
     content: 'Add File';
-    width: 88%;
+    width: 100%;
     margin: 8px 0px;
     padding: 5px 8px;
 
@@ -129,4 +130,12 @@
     font-size: 14px;
     background-color: var(--bgcolor-neutral);
     border: none;
+}
+
+.card-body {
+    font-size: 14px;
+}
+
+table {
+    font-size: 14px;
 }

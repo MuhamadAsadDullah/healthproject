@@ -3,7 +3,7 @@
 
 :root {
     /* BACKGROUND-COLOR */
-    --bgcolor-primary: #DC9788;
+    --bgcolor-primary: #303A42;
     --bgcolor-primary-default: #F2F2F2;
     --bgcolor-secondary: #562349;
 
@@ -14,7 +14,7 @@
 
 
     /* FONT-COLOR */
-    --fcolor-primary: #DC9788;
+    --fcolor-primary: #303A42;
     --fcolor-secondary: #562349;
     
     --fcolor-neutral: #000000;
