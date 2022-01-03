@@ -9,10 +9,14 @@
 
     --bgcolor-neutral: #2B2B2B;
     --bgcolor-neutral-default: #525252;
-    --bgcolor-neutral-secondary: #FFFFFF;   
+    --bgcolor-neutral-secondary: #FFFFFF; 
     
-
-
+    --bgcolor-success: #D9F7BE;
+    --bgcolor-warning: #FFF6D1;
+    --bgcolor-danger: #FFD5D1;
+    
+    
+    
     /* FONT-COLOR */
     --fcolor-primary: #DC9788;
     --fcolor-secondary: #562349;
@@ -21,7 +25,11 @@
     --fcolor-neutral-default: #606060;
     --fcolor-neutral-secondary: #FFFFFF;    
     
+    --fcolor-success: #0A5C1F;
+    --fcolor-warning: #BF7B05;
+    --fcolor-danger: #A8071A;
     
+
     
     /* FONT-FAMILY */
     --font-primary: 'Poppins', 'Quicksand', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -134,12 +142,54 @@
 
 .card-body {
     font-size: 14px;
+    color: var(--fcolor-neutral) !important;
 }
 
 table {
     font-size: 14px;
+    color: var(--fcolor-neutral) !important;
 }
 
+.status {
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.status span {
+    display: inline;
+}
+
+.status-success {
+    color: var(--fcolor-success);
+    background-color: var(--bgcolor-success);
+}
+
+.status-warning {
+    color: var(--fcolor-warning);
+    background-color: var(--bgcolor-warning);
+}
+
+.status-danger {
+    color: var(--fcolor-danger);
+    background-color: var(--bgcolor-danger);
+}
+
+.btn-warning {
+    border: none;
+    outline: none;
+    
+    color: var(--fcolor-warning);
+    background-color: var(--bgcolor-warning);
+}
+
+.btn-danger {
+    border: none;
+    outline: none;
+    
+    color: var(--fcolor-danger);
+    background-color: var(--bgcolor-danger);
+}
 
 .priview-image {
     width: 100%;

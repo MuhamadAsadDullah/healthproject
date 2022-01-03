@@ -357,6 +357,7 @@
     width: 240px;
     height: 360px;
     margin: 4px 4px;
+    position: relative;
 
     border-radius: 12px;
     overflow: hidden;
@@ -364,17 +365,59 @@
 }
 
 .category .category-priview .priview img {
+    position: relative;
     min-width: 100%;
     min-height: 100%;
     z-index: -1111;
 }
 
 .category .category-priview .priview .priview-content {
+    width: 100%;
     height: 100%;
-    display: absolute;
-    margin-top: 0px;
+    margin-top: -412px;
+    padding: 42px 24px;
+    
+    font-size: 12px;
+    text-align: left;
+    position: absolute;
 
-    z-index: 1;
+    z-index: 111;
+
+    color: var(--fcolor-neutral-secondary);
+    background-color: var(--bgcolor-primary);
+}
+
+.category .category-priview .priview .priview-content .priview-name, .priview-category {
+    margin-bottom: 0px;
+    font-size: 24px;
+    font-family: var(--font-secondary);
+}
+
+.category .category-priview .priview .priview-content .priview-rate {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.category .category-priview .priview .priview-content .priview-rate .iconify {
+    margin-top: -4px;
+    margin-right: 8px;
+}
+
+.category .category-priview .priview .priview-content .priview-discount {
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+
+.category .category-priview .priview .priview-content .priview-price {
+    margin-top: 4px;
+    margin-bottom: 42px;
+    font-size: 16px;
+}
+
+.category .category-priview .priview .priview-content a {
+    width: 100%;
+    padding: 6px !important;
+    border: 1px solid var(--bgcolor-neutral-secondary);
 }
 
 
@@ -475,8 +518,9 @@
 }
 
 .popular .card .card-image img {
-    min-width: 100%;
+    /* min-width: 100%; */
     min-height: 100%;
+    height: 100%;
 }
 
 
