@@ -10,6 +10,35 @@
     <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css">
     <link rel="stylesheet" href="assets/style/style.css">
     <title>Homepage</title>
+
+    <style>
+        /* looping 
+        
+        #prview-content
+
+        .category .category-priview .priview #priview-content1 {
+            display: none;
+        }
+
+        */
+        
+        .category .category-priview .priview #priview-content {
+            display: none;
+        }
+        
+        /* 
+        looping #Priview-content sama .priview-content
+
+        #priview-content1:checked + .priview-content1 {
+            z-index: 11 !important;
+        } 
+        */
+        
+        #priview-content:checked + .priview-content {
+            z-index: 11 !important;
+        }
+
+    </style>
 </head>
 <body>
 
@@ -37,31 +66,6 @@
                 
                 <form class="d-flex">
                     <a href=""><span class="iconify" data-icon="akar-icons:search"></span></a>
-                    <!-- <a href=""><span class="iconify" data-icon="ant-design:heart-outlined"></span></a> -->
-                    <!-- <a href="">
-                        <div class="profile">
-                            <img src="assets/image/user.png" alt="">
-                        </div>
-                    </a> -->
-
-                    <!-- <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li>
-                            <a href=""><span class="iconify" data-icon="akar-icons:search"></span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="iconify" data-icon="akar-icons:cart"></span></a>
-                        </li>
-                        <li>
-                            <a href=""><span class="iconify" data-icon="feather:message-square"></span></a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <div class="profile">
-                                    <img src="assets/image/user.png" alt="">
-                                </div>
-                            </a>
-                        </li>
-                    </ul> -->
                 </form>
             </div>
         </div>
@@ -106,86 +110,54 @@
 
         <section class="category" id="categories">
         <div class="container">
-            <p class="font-subhead">Category</p>
-            <section class="regular slider category-menu">
-              <div>
-                <a href="">
-                <div class="menu">
-                    <div class="menu-image">
-                        <img src="assets/image/user.png" alt="">
-                    </div>
-                    <p>All</p>
-                </div>
-                </a>
-              </div>
-              <div>
-                <a href="">
-                <div class="menu">
-                    <div class="menu-image">
-                        <img src="assets/image/user.png" alt="">
-                    </div>
-                    <p>Bikini</p>
-                </div>
-                </a>
-              </div>
-              <div>
-                <a href="">
-                <div class="menu">
-                    <div class="menu-image">
-                        <img src="assets/image/user.png" alt="">
-                    </div>
-                    <p>Top</p>
-                </div>
-                </a>
-              </div>
-              <div>
-                <a href="">
-                <div class="menu">
-                    <div class="menu-image">
-                        <img src="assets/image/user.png" alt="">
-                    </div>
-                    <p>Dress</p>
-                </div>
-                </a>
-              </div>
-              <div>
-                <a href="">
-                <div class="menu">
-                    <div class="menu-image">
-                        <img src="assets/image/user.png" alt="">
-                    </div>
-                    <p>Shoes</p>
-                </div>
-                </a>
-              </div>
-              <div>
-                <a href="">
-                <div class="menu">
-                    <div class="menu-image">
-                        <img src="assets/image/user.png" alt="">
-                    </div>
-                    <p>Hat</p>
-                </div>
-                </a>
-              </div>
-              <div>
-                <a href="">
-                <div class="menu">
-                    <div class="menu-image">
-                        <img src="assets/image/user.png" alt="">
-                    </div>
-                    <p>Shirt</p>
-                </div>
-                </a>
-              </div>
-            </section>
-
+            
             <div class="category-priview text-center">
+
+                <!--Awal Looping -->
                 <div class="priview">
+
+
                     <label for="priview-content">
+                        <!-- 
+                            untuk for="priview-content" di looping tambahin id dari productnya
+                            (berdasarkan masing-masing card)
+                            contoh:
+                            
+                            <label for="priview-content1">
+                            <label for="priview-content2">
+
+
+
+                            dan di samain sama id input type="checkbox"
+                            <input type="checkbox" name="" id="priview-content1">
+                            <input type="checkbox" name="" id="priview-content2">
+
+
+
+
+                            sama class priview content juga dilooping 
+                            -> <div class="priview-content">
+                                
+                            tapi dijadiin dua kelas (kelas biasa sama kelas looping)
+                            contoh:
+                            -> <div class="priview-content priview-content1"> 
+
+                                pake id productnya atau urut aja juga boleh (intinya disamaain kayak diatasnya)
+                        -->
+
+
                         <img src="assets/image/dummy2.png" alt="">
+
+
+                        <!-- looping id nya -->
                         <input type="checkbox" name="" id="priview-content" class="chk-priview-content">
+
+                        <!-- looping nama classnya (tapi dijadiin dua) -->
                         <div class="priview-content">
+
+
+
+
                             <p class="priview-name">CharmTemp</p> 
                             <p class="priview-category">Crown</p>
                             <div class="priview-rate">
@@ -198,6 +170,11 @@
                         </div>
                     </label>
                 </div>
+                <!-- Akhir Looping -->
+
+
+
+
                 <div class="priview">
                     <label for="priview-content">
                         <img src="assets/image/dummy2.png" alt="">
@@ -365,7 +342,6 @@
 
                             <div class="mt-5">
                                 <a href="" class="btn btn-primary">View Product</a>
-                                <!-- <button class="btn btn-primary-default btn-love"><span class="iconify" data-icon="ant-design:heart-filled"></span></button> -->
                             </div>
                         </div>
                         <div class="card-image">
@@ -388,7 +364,6 @@
 
                             <div class="mt-5">
                                 <a href="" class="btn btn-primary">View Product</a>
-                                <!-- <button class="btn btn-primary-default btn-love"><span class="iconify" data-icon="ant-design:heart-filled"></span></button> -->
                             </div>
                         </div>
                         <div class="card-image">
@@ -408,53 +383,6 @@
                 <a href="">Selkie</a>
             </div>
         </section>
-
-        <!-- <section class="riview">
-        <div class="container">
-            <div class="riview-image-promo">
-                <img src="assets/image/dummy2.png" alt="">
-            </div>
-            <div class="riview-user">
-                <p class="font-subhead mb-4">Shop The Clotie Runaway</p>
-                <div class="row">
-                    <div class="col">
-                        <div class="riview-image">
-                            <img src="assets/image/dummy2.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col riview-user-desc">
-                        <p>The Caviar Da Vinci Puff Dress</p>
-                        <div class="riview-rate">
-                            <span class="iconify" data-icon="ant-design:heart-outlined"></span>
-                            <span>3.8 M</span>
-                        </div>
-                        <p class="font-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Blanditiis ipsum quos optio vitae, voluptatum quae autem 
-                            dolorem numquam sequi dicta recusandae fuga similique.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="riview-image">
-                            <img src="assets/image/dummy2.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col riview-user-desc">
-                        <p>The Caviar Da Vinci Puff Dress</p>
-                        <div class="riview-rate">
-                            <span class="iconify" data-icon="ant-design:heart-outlined"></span>
-                            <span>3.8 M</span>
-                        </div>
-                        <p  class="font-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Blanditiis ipsum quos optio vitae, voluptatum quae autem 
-                            dolorem numquam sequi dicta recusandae fuga similique.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </section> -->
 
         <section class="container">
             <div class="promo">
@@ -494,10 +422,6 @@
         <div class="container">
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
                 <p class="col-md-4 mb-0">Clotie</p>
-
-                <!-- <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-                    <span>Privacy Policy</span>
-                </a> -->
                 
                 <ul class="nav col-md-4 justify-content">
                     <li class="nav-item"><a href="#" class="nav-link px-2">Privacy Policy</a></li>

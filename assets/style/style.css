@@ -375,17 +375,17 @@
     z-index: 1;
 }
 
-.category .category-priview .priview .chk-priview-content {
+/* .category .category-priview .priview .chk-priview-content {
     display: none;
 }
 
-/* .category .category-priview .priview .priview-content {
+.category .category-priview .priview .priview-content {
     display: none;
-} */
+}
 
 .chk-priview-content:checked + .priview-content {
     z-index: 11 !important;
-}
+} */
 
 .category .category-priview .priview .priview-content .btn  {
     z-index: 111 !important;
