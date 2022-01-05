@@ -213,17 +213,14 @@
 }
 
 .jumbotron .jum-image {
-    width: 400px;
-    height: 700px;
-    margin-top: 36px;
-    clip-path: polygon(0% 0%, 90% 10%, 100% 100%, 0% 100%);
+    margin: 100px 0px;
+    margin-right: 36px;
+    /* clip-path: polygon(0% 0%, 90% 10%, 100% 100%, 0% 100%); */
     overflow: hidden;
 }
 
 .jumbotron .jum-image img {
-    height: 100%;
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
 }
 
 .jumbotron h6 {
@@ -281,9 +278,9 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .jumbotron {
+    /* .jumbotron {
         clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
-    }
+    } */
 }
 
 @media screen and (max-width: 450px) {
