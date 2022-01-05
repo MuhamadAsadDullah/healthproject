@@ -152,10 +152,9 @@
 
 .navbar form .iconify {
     width: 36px;
-    height: 40px;
+    height: 36px;
     
-    margin-right: 4px;
-    padding: 8px 8px;
+    padding: 8px 4px;
     color: var(--fcolor-neutral);
 }
 
@@ -181,10 +180,13 @@
     border: 1px solid var(--bgcolor-primary);
 }
 
-.search-bar .iconify {
+.search-bar button {
     top: -2px;
     right: -12px;
     position: absolute;
+
+    border: none;
+    background-color: transparent;
 }
 
 .search-bar:hover input {
