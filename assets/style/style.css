@@ -128,11 +128,11 @@
 /* ---------------------- NAVBAR ---------------------- */
 
 .navbar {
-    background-color: var(--bgcolor-primary) !important;
+    background-color: var(--bgcolor-neutral-secondary) !important;
 }
 
-.navbar .navbar-brand {
-    color: var(--fcolor-neutral-secondary) !important;
+.navbar .navbar-brand img {
+    width: 140px;
 }
 
 .navbar ul {
@@ -142,7 +142,7 @@
 .navbar ul li a {
     margin: 0px 12px;
     font-size: 18px;
-    color: var(--fcolor-neutral-secondary) !important;
+    color: var(--fcolor-neutral) !important;
 }
 
 .navbar ul li a:hover {
@@ -156,7 +156,7 @@
     
     margin-right: 4px;
     padding: 8px 8px;
-    color: var(--fcolor-neutral-secondary);
+    color: var(--fcolor-neutral);
 }
 
 /* .navbar form .iconify2 {
@@ -350,7 +350,6 @@
 
 .category .category-priview a {
     text-decoration: none;
-    pointer-events: none;
 }
 
 .category .category-priview .priview {
@@ -386,6 +385,10 @@
 
 .chk-priview-content:checked + .priview-content {
     z-index: 11 !important;
+}
+
+.category .category-priview .priview .priview-content .btn  {
+    z-index: 111 !important;
 }
 
 /* .category .category-priview .priview .priview-content {
