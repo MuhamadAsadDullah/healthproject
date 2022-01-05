@@ -9,7 +9,36 @@
     <link rel="stylesheet" type="text/css" href="assets/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css">
     <link rel="stylesheet" href="assets/style/style.css">
-    <title>Azuri Dental</title>
+    <title>Homepage</title>
+
+    <style>
+        /* looping 
+        
+        #prview-content
+
+        .category .category-priview .priview #priview-content1 {
+            display: none;
+        }
+
+        */
+        
+        /* .category .category-priview .priview #priview-content {
+            display: none;
+        } */
+        
+        /* 
+        looping #Priview-content sama .priview-content
+
+        #priview-content1:checked + .priview-content1 {
+            z-index: 11 !important;
+        } 
+        */
+        
+        /* #priview-content:checked + .priview-content {
+            z-index: 11 !important;
+        } */
+
+    </style>
 </head>
 <body>
 
@@ -83,9 +112,73 @@
         <div class="container">
             
             <div class="category-priview text-center">
+
+                <!--Awal Looping -->
+                <div class="priview">
+
+
+                    <label for="priview-content">
+                        <!-- 
+                            untuk for="priview-content" di looping tambahin id dari productnya
+                            (berdasarkan masing-masing card)
+                            contoh:
+                            
+                            <label for="priview-content1">
+                            <label for="priview-content2">
+                                
+
+                                
+                            dan di samain sama id input type="checkbox"
+                            <input type="checkbox" name="" id="priview-content1">
+                            <input type="checkbox" name="" id="priview-content2">
+                            
+
+                            
+
+                            sama class priview content juga dilooping 
+                            -> <div class="priview-content">
+                                
+                                tapi dijadiin dua kelas (kelas biasa sama kelas looping)
+                            contoh:
+                            -> <div class="priview-content priview-content1"> 
+
+                                pake id productnya atau urut aja juga boleh (intinya disamaain kayak diatasnya)
+                            -->
+
+
+                            <img src="assets/image/dummy2.png" alt="">
+
+                            
+                        <!-- looping id nya -->
+                        <!-- <input type="checkbox" name="" id="priview-content" class="chk-priview-content"> -->
+
+                        <!-- looping nama classnya (tapi dijadiin dua) -->
+                        <div class="priview-content">
+
+                            
+
+
+                            <p class="priview-name">CharmTemp</p> 
+                            <p class="priview-category">Crown</p>
+                            <div class="priview-rate">
+                                <span class="iconify" data-icon="ant-design:heart-filled"></span><span>22 People like this</span>
+                            </div>
+                            <p class="priview-discount"><s>Rp 585,0000</s></p>
+                            <p class="priview-price">Rp 310,0000</p>
+
+                            <a href="product-detail.html" class="btn btn-primary">View Product</a>
+                        </div>
+                    </label>
+                </div>
+                <!-- Akhir Looping -->
+
+
+
+
                 <div class="priview">
                     <label for="priview-content">
                         <img src="assets/image/dummy2.png" alt="">
+                        <input type="checkbox" name="" id="priview-content" class="chk-priview-content">
                         <div class="priview-content">
                             <p class="priview-name">CharmTemp</p> 
                             <p class="priview-category">Crown</p>
@@ -102,6 +195,109 @@
                 <div class="priview">
                     <label for="priview-content">
                         <img src="assets/image/dummy2.png" alt="">
+                        <input type="checkbox" name="" id="priview-content" class="chk-priview-content">
+                        <div class="priview-content">
+                            <p class="priview-name">CharmTemp</p> 
+                            <p class="priview-category">Crown</p>
+                            <div class="priview-rate">
+                                <span class="iconify" data-icon="ant-design:heart-filled"></span><span>22 People like this</span>
+                            </div>
+                            <p class="priview-discount"><s>Rp 585,0000</s></p>
+                            <p class="priview-price">Rp 310,0000</p>
+                            
+                            <a href="product-detail.html" class="btn btn-primary">View Product</a>
+                        </div>
+                    </label>
+                </div>
+                <div class="priview">
+                    <label for="priview-content">
+                        <img src="assets/image/dummy2.png" alt="">
+                        <input type="checkbox" name="" id="priview-content" class="chk-priview-content">
+                        <div class="priview-content">
+                            <p class="priview-name">CharmTemp</p> 
+                            <p class="priview-category">Crown</p>
+                            <div class="priview-rate">
+                                <span class="iconify" data-icon="ant-design:heart-filled"></span><span>22 People like this</span>
+                            </div>
+                            <p class="priview-discount"><s>Rp 585,0000</s></p>
+                            <p class="priview-price">Rp 310,0000</p>
+                            
+                            <a href="product-detail.html" class="btn btn-primary">View Product</a>
+                        </div>
+                    </label>
+                </div>
+                <div class="priview">
+                    <label for="priview-content">
+                        <img src="assets/image/dummy2.png" alt="">
+                        <input type="checkbox" name="" id="priview-content" class="chk-priview-content">
+                        <div class="priview-content">
+                            <p class="priview-name">CharmTemp</p> 
+                            <p class="priview-category">Crown</p>
+                            <div class="priview-rate">
+                                <span class="iconify" data-icon="ant-design:heart-filled"></span><span>22 People like this</span>
+                            </div>
+                            <p class="priview-discount"><s>Rp 585,0000</s></p>
+                            <p class="priview-price">Rp 310,0000</p>
+                            
+                            <a href="product-detail.html" class="btn btn-primary">View Product</a>
+                        </div>
+                    </label>
+                </div>
+                <div class="priview">
+                    <label for="priview-content">
+                        <img src="assets/image/dummy2.png" alt="">
+                        <input type="checkbox" name="" id="priview-content" class="chk-priview-content">
+                        <div class="priview-content">
+                            <p class="priview-name">CharmTemp</p> 
+                            <p class="priview-category">Crown</p>
+                            <div class="priview-rate">
+                                <span class="iconify" data-icon="ant-design:heart-filled"></span><span>22 People like this</span>
+                            </div>
+                            <p class="priview-discount"><s>Rp 585,0000</s></p>
+                            <p class="priview-price">Rp 310,0000</p>
+                            
+                            <a href="product-detail.html" class="btn btn-primary">View Product</a>
+                        </div>
+                    </label>
+                </div>
+                <div class="priview">
+                    <label for="priview-content">
+                        <img src="assets/image/dummy2.png" alt="">
+                        <input type="checkbox" name="" id="priview-content" class="chk-priview-content">
+                        <div class="priview-content">
+                            <p class="priview-name">CharmTemp</p> 
+                            <p class="priview-category">Crown</p>
+                            <div class="priview-rate">
+                                <span class="iconify" data-icon="ant-design:heart-filled"></span><span>22 People like this</span>
+                            </div>
+                            <p class="priview-discount"><s>Rp 585,0000</s></p>
+                            <p class="priview-price">Rp 310,0000</p>
+                            
+                            <a href="product-detail.html" class="btn btn-primary">View Product</a>
+                        </div>
+                    </label>
+                </div>
+                <div class="priview">
+                    <label for="priview-content">
+                        <img src="assets/image/dummy2.png" alt="">
+                        <input type="checkbox" name="" id="priview-content" class="chk-priview-content">
+                        <div class="priview-content">
+                            <p class="priview-name">CharmTemp</p> 
+                            <p class="priview-category">Crown</p>
+                            <div class="priview-rate">
+                                <span class="iconify" data-icon="ant-design:heart-filled"></span><span>22 People like this</span>
+                            </div>
+                            <p class="priview-discount"><s>Rp 585,0000</s></p>
+                            <p class="priview-price">Rp 310,0000</p>
+                            
+                            <a href="product-detail.html" class="btn btn-primary">View Product</a>
+                        </div>
+                    </label>
+                </div>
+                <div class="priview">
+                    <label for="priview-content">
+                        <img src="assets/image/dummy2.png" alt="">
+                        <input type="checkbox" name="" id="priview-content" class="chk-priview-content">
                         <div class="priview-content">
                             <p class="priview-name">CharmTemp</p> 
                             <p class="priview-category">Crown</p>
