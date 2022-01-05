@@ -375,25 +375,17 @@
     z-index: 1;
 }
 
-/* .category .category-priview .priview .chk-priview-content {
-    display: none;
-}
-
-.category .category-priview .priview .priview-content {
-    display: none;
-}
-
-.chk-priview-content:checked + .priview-content {
+.category label:hover > .priview-content {
     z-index: 11 !important;
-} */
+} 
+
+.category label:focus > .priview-content {
+    z-index: 11 !important;
+} 
 
 .category .category-priview .priview .priview-content .btn  {
     z-index: 111 !important;
 }
-
-/* .category .category-priview .priview .priview-content {
-    display: block;
-} */
 
 .category .category-priview .priview .priview-content {
     width: 100%;
