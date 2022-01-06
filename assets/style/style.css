@@ -412,22 +412,30 @@
 }
 
 .category .category-priview .priview label {
+
     padding: 0px;
     z-index: 11;
 }
 
-.category .category-priview .priview img {
-    position: relative;
-    min-width: 100%;
-    min-height: 100%;
+.category .category-priview .priview .img-background {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bgcolor-neutral-secondary);
+    
     z-index: 1;
 }
 
-.category label:hover > .priview-content {
+.category .category-priview .priview img {
+    position: relative;
+    height: 100%;
+    z-index: 2;
+}
+
+.category label:hover > .priview > .priview-content {
     z-index: 11 !important;
 } 
 
-.category label:focus > .priview-content {
+.category label:focus > .priview > .priview-content {
     z-index: 11 !important;
 } 
 
@@ -438,7 +446,7 @@
 .category .category-priview .priview .priview-content {
     width: 100%;
     height: 100%;
-    margin-top: -412px;
+    margin-top: -360px;
     padding: 42px 24px;
     
     font-size: 12px;
