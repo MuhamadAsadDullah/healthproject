@@ -5,7 +5,7 @@
     /* BACKGROUND-COLOR */
     --bgcolor-primary: #303A42;
     --bgcolor-primary-default: #F2F2F2;
-    --bgcolor-secondary: #562349;
+    --bgcolor-secondary: #1DBB9A;
 
     --bgcolor-neutral: #000000;
     --bgcolor-neutral-default: #606060;
@@ -15,7 +15,7 @@
 
     /* FONT-COLOR */
     --fcolor-primary: #303A42;
-    --fcolor-secondary: #562349;
+    --fcolor-secondary: #1DBB9A;
     
     --fcolor-neutral: #000000;
     --fcolor-neutral-default: #606060;
@@ -61,8 +61,8 @@
 }
 
 .btn-primary:hover {
-    border: 1px solid var(--bgcolor-primary);
-    background-color: var(--bgcolor-primary) !important;
+    border: 1px solid var(--bgcolor-secondary);
+    background-color: var(--bgcolor-secondary) !important;
 }
 
 .btn-primary-default {
