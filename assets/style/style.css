@@ -526,6 +526,11 @@
     width: 100%;
 }
 
+.popular .card .card-content .show {
+    height: 56px;
+    overflow: hidden;
+}
+
 .popular .card .card-content .card-title {
     font-size: 20px;
     font-weight: 500;
