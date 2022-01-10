@@ -418,6 +418,7 @@
 }
 
 .category .category-priview .priview img {
+    margin: 0px auto;
     position: relative;
     height: 100%;
     z-index: 2;
@@ -449,6 +450,11 @@
 
     color: var(--fcolor-neutral-secondary);
     background-color: var(--bgcolor-primary);
+}
+
+.category .category-priview .priview .priview-content .content {
+    height: 260px;
+    overflow: hidden;
 }
 
 .category .category-priview .priview .priview-content .priview-name, .priview-category {
@@ -592,6 +598,7 @@
 }
 
 .popular .card .card-image img {
+    float: left;
     position: absolute;
 
     /* min-width: 100%; */
