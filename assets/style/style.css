@@ -205,8 +205,6 @@
 /* -------------------- JUMBOTRON -------------------- */
 
 .jumbotron {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 0% 100%);
-
     color: var(--fcolor-neutral-secondary);
     background-color: var(--bgcolor-primary);
 }
@@ -260,10 +258,6 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .jumbotron {
-        clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
-    }
-    
     .jumbotron .jum-image {
         display: none;
     }
@@ -276,6 +270,10 @@
 }
 
 @media screen and (max-width: 560px) {
+    .jumbotron h1 {
+        font-size: 100px;
+    }
+
     .jumbotron .container {
         display: grid;
         grid-gap: 0px;
@@ -293,13 +291,6 @@
     
     justify-content: center;
     } 
-}
-
-
-@media screen and (max-width: 450px) {
-    .jumbotron h1 {
-        font-size: 100px;
-    }
 }
 
 
@@ -770,7 +761,7 @@
 
 
 
-footer p {
+/* footer p {
     margin-top: -4px;
 
     font-size: 24px;
@@ -782,4 +773,89 @@ footer p {
 
 footer li a {
     color: var(--fcolor-secondary) !important;
+} */
+
+footer {
+    background-color: var(--bgcolor-neutral-secondary-default);
+}
+
+footer .foot-conclude {
+    display: grid;
+    grid-gap: 36px;
+    grid-template-columns: auto auto auto 280px;
+}
+
+footer .font-desc {
+    font-family: var(--font-primary);
+}
+
+footer .foot-conclude ul{
+    padding: 0px;
+}
+
+footer .foot-conclude ul li {
+    margin: 12px 0px;
+    list-style: none;
+}
+
+footer .foot-conclude ul li a {
+    text-decoration: none;
+    font-family: var(--font-primary);
+    
+    color: var(--fcolor-neutral-secondary-default);
+}
+
+footer .foot-conclude ul li a:hover {
+    color: var(--fcolor-primary);
+}
+
+footer .foot-conclude .social {
+    display: flex;
+}
+
+footer .foot-conclude .social a > div {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+
+    padding: 6px 0px;
+    text-align: center;
+    border-radius: 100%;
+
+    color: var(--fcolor-primary);
+    background-color: var(--bgcolor-primary-default);
+}
+
+footer .foot-conclude .social a > div:hover {
+    color: var(--fcolor-neutral-secondary);
+    background-color: var(--bgcolor-primary);
+}
+
+footer .foot-copyright {
+    display: flex;
+    border-top: 1px solid var(--bgcolor-primary-default);
+}
+
+footer .foot-copyright .image img {
+    width: 60px;
+}
+
+footer .foot-copyright .copyright p span {
+    color: var(--fcolor-primary);
+}
+
+footer .foot-copyright .copyright p span {
+    color: var(--fcolor-primary);
+}
+
+@media screen and (max-width: 780px) {
+    footer .foot-conclude {
+        grid-template-columns: auto 240px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    footer .foot-conclude {
+        grid-template-columns: auto;
+    }
 }
