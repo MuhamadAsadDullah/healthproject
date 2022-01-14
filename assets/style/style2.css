@@ -164,14 +164,19 @@ nav ul li a:hover {
 .search-bar input {
     padding: 8px 16px;
     padding-right: 40px;
-
+    
     font-size: 12px;
-
+    
     border-radius: 50px;
-    border: 1px solid transparent;
+    /* border: 1px solid transparent; */
+    border: 1px solid var(--bgcolor-neutral-default);
     
     transition: all 1s;
 }
+
+/* .search-bar:hover input {
+    border: 1px solid var(--bgcolor-primary);
+} */
 
 .search-bar input:focus {
     outline: none;
@@ -180,21 +185,11 @@ nav ul li a:hover {
 
 .search-bar button {
     top: -1px;
-    right: 0px;
+    right: -6px;
     position: absolute;
 
     border: none;
     background-color: transparent;
-}
-
-.search-bar:hover input {
-    padding: 8px 16px;
-    padding-right: 40px;
-
-    font-size: 12px;
-
-    border-radius: 50px;
-    border: 1px solid var(--bgcolor-primary);
 }
 
 
