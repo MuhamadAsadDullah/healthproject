@@ -750,6 +750,40 @@ nav ul li a:hover {
 
 
 
+.customer .customer-name .name {
+    margin: 12px 3px;
+    padding: 8px 16px;
+    display: inline-block;
+
+    text-align: center;
+    cursor: default;
+    outline: none;
+
+    border-radius: 50px;
+    border: 1px solid var(--bgcolor-primary);
+    background-color: transparent;
+}
+
+.customer .customer-name .font-desc {
+    margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
