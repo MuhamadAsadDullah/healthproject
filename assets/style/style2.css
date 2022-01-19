@@ -738,6 +738,12 @@ nav ul li a:hover {
     padding-top: 12px;
     height: 106px;
     overflow: hidden;
+    -webkit-user-drag: auto;
+}
+
+.sales .cards .card .btn-chat .iconify {
+    margin-top: -3px;
+    margin-right: 6px;
 }
 
 
@@ -783,7 +789,7 @@ nav ul li a:hover {
 }
 
 .customer .customer-table .table tr {
-    border: transparent;
+    /* border: transparent; */
     outline: none;
     border-style: none;
 }
