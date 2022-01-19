@@ -750,6 +750,54 @@ nav ul li a:hover {
 
 
 
+.customer .customer-table {
+    overflow-x: auto;
+	-webkit-user-drag: none;
+	-webkit-app-region: no-drag;
+}
+
+.customer .customer-table .table {
+    border: none;
+    outline: none;
+    border-style: none;
+}
+
+.customer .customer-table .table tbody {
+    border: none;
+    outline: none;
+    border-style: none;
+}
+
+.customer .customer-table .table tr {
+    border: transparent;
+    outline: none;
+    border-style: none;
+}
+
+.customer .customer-table .table tr th:nth-child(1), .customer .customer-table .table tr td:nth-child(1)  {
+    text-align: center;
+}
+
+.customer .customer-table .table tr th:nth-child(2), .customer .customer-table .table tr td:nth-child(2)  {
+    min-width: 160px !important;
+}
+
+.customer .customer-table .table tr th:nth-child(3), .customer .customer-table .table tr td:nth-child(3)  {
+    min-width: 200px !important;
+}
+
+.customer .customer-table .table tr th:nth-child(4), .customer .customer-table .table tr td:nth-child(4)  {
+    min-width: 200px !important;
+}
+
+.customer .customer-table .table tr th:nth-child(5), .customer .customer-table .table tr td:nth-child(5)  {
+    min-width: 120px !important;
+}
+
+.customer .customer-table .table tr th:nth-child(6), .customer .customer-table .table tr td:nth-child(6)  {
+    min-width: 120px !important;
+}
+
 .customer .customer-name .name {
     margin: 12px 3px;
     padding: 8px 16px;
@@ -799,7 +847,12 @@ footer {
 footer .foot-conclude {
     display: grid;
     grid-gap: 36px;
-    grid-template-columns: auto auto auto 280px;
+    grid-template-columns: auto 280px;
+}
+
+footer .foot-conclude .logo {
+    width: 100px;
+    margin-bottom: 16px;
 }
 
 footer .font-title {
@@ -853,7 +906,7 @@ footer .foot-conclude .social a > div:hover {
 }
 
 footer .foot-copyright {
-    display: flex;
+    /* display: flex; */
     border-top: 1px solid var(--bgcolor-neutral-secondary-default);
 }
 
