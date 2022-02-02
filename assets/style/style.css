@@ -355,6 +355,26 @@ nav ul li a:hover {
     width: 36px;
 }
 
+.category .category-menu {
+    max-width: 440px;
+    text-align: center;
+}
+
+.category .category-menu .menu {
+    margin: 0px 16px;
+    padding: 8px 16px;
+
+    border-radius: 4px;
+    text-decoration: none;
+    
+    color: var(--fcolor-neutral-default);
+}
+
+.category .category-menu .menu:hover {
+    color: var(--fcolor-neutral);
+    background-color: var(--bgcolor-neutral-secondary-default);
+}
+
 .category .category-priview {
     padding: 12px 0px;
 }
