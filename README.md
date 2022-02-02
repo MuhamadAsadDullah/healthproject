@@ -13,3 +13,4 @@ PRODUCT
 STYLE.CSS
 - line 362 s/d 391 (Style Category Menu)
 - untuk active nama class nya (menu-active)
+- dan untuk responsive menu nya bisa diatur di max-width line 363 (kodingan ini)
